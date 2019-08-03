@@ -1,0 +1,30 @@
+{
+    "name": "scorpiotek/report-creator",
+    "description": "A library that allows creation of HTML-responsive emails to be used with WordPress.",
+    "type": "library",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8",
+        "squizlabs/php_codesniffer": "2.6",
+        "phpdocumentor/reflection-docblock": "2.*"
+    },
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Christian Saborio",
+            "email": "csaborio@scorpiotek.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ScorpioTek\\Reports\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ScorpioTek\\Reports\\Tests\\": "tests/"
+        }
+    }
+}
