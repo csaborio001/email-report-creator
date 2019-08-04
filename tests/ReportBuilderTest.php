@@ -12,19 +12,11 @@ class ReportBuilderTests extends TestCase  {
 
     public function testConstructorDefaultParameter() {
         $rp = new ReportBuilder();
-        \fwrite(STDERR, var_dump($rp, TRUE));
         $this->assertEquals( $rp->get_template_names_list(), array( 'default', 'tables' ) ) ;
     }
 
     public function testConstructorCustomParameter() {
         $rp = new ReportBuilder('default');
-        // \fwrite(STDERR, var_dump($rp, TRUE));
         $this->assertEquals( $rp->get_template_names_list(), array( 'default', 'tables' ) ) ;
-    }
-
-    
-
-    public function testThisShouldFail() {
-        $this->assertEquals ( 1, 1 );
     }
 }
